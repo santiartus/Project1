@@ -1,0 +1,16 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+   prueba
+{% endblock %}
+
+{% block body %}
+
+<form method="post">
+   {% csrf_token %}
+    {{form}}
+     <button class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
+
+
